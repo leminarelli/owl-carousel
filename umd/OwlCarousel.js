@@ -1,4 +1,7 @@
 (function (global, factory) {
+
+	if (typeof window === 'undefined') return;
+
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
     typeof define === 'function' && define.amd ? define(['react'], factory) :
     (global.ReactOwlCarousel = factory(global.React));
